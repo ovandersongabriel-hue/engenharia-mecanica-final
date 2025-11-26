@@ -1,0 +1,163 @@
+.fundo-azul {
+    background-color: #1e3a8a;
+    background-image: radial-gradient(#3b82f6 1px, transparent 1px); 
+    background-size: 20px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  
+  
+  .cabecalho {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .icone-engrenagem {
+    background-color: #f97316; /* Laranja */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 1rem;
+  }
+  
+  .cabecalho h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .cabecalho p {
+    opacity: 0.8;
+    margin-top: 0.5rem;
+  }
+  
+  
+  .cartao-login {
+    background-color: white;
+    color: #333;
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+  
+  .cartao-login h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  
+  .cartao-login > p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  
+  .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .campo label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .campo input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+
+  .acoes-conta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .acoes-conta a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  
+  .btn-entrar {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-entrar:hover {
+    background-color: #1d4ed8;
+  }
+  
+  
+  .divisor {
+    text-align: center;
+    color: #999;
+    font-size: 0.85rem;
+    margin: 1.5rem 0;
+    position: relative;
+  }
+  
+  .divisor::before, .divisor::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #ddd;
+  }
+  .divisor::before { left: 0; }
+  .divisor::after { right: 0; }
+  
+  .botoes-sociais {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .botoes-sociais button {
+    flex: 1;
+    padding: 0.6rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .rodape-form {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .rodape-form a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+  }
