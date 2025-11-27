@@ -1,0 +1,162 @@
+.home-container {
+    width: 100%;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  
+  .hero-section {
+    position: relative;
+    height: 90vh; 
+   
+    background-image: url('https://www.senaipr.org.br/noticias-da-industria/dbimages/adobestock-322198881_263574_img.jpeg');
+    
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    color: white;
+  }
+  
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(16,36,88,0.95) 0%, rgba(16,36,88,0.7) 50%, rgba(16,36,88,0.1) 100%);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+  }
+  
+
+  .cta-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn-orange {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .btn-orange:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+  }
+  
+  .btn-transparent {
+    background: transparent;
+    color: white;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-transparent:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  
+ 
+  .whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    cursor: pointer;
+  }
+  .whatsapp-float img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .main-footer {
+    background-color: #111827;
+    color: #9ca3af;
+    padding: 60px 10% 20px;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 40px;
+    border-bottom: 1px solid #374151;
+    padding-bottom: 40px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo .icon-gear {
+    font-size: 2.5rem;
+    color: #ff6600;
+  }
+  
+  .footer-column h4 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .footer-column ul li:hover {
+    color: #ff6600;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+  }

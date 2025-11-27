@@ -1,0 +1,73 @@
+<main class="login-container">
+  
+    <header class="page-header">
+      <div class="logo-area">
+        <span class="icon-gear">⚙️</span>
+      </div>
+      <h1>Crie sua Conta</h1>
+      <p>Junte-se à equipe MechanicPro</p>
+    </header>
+  
+    <section class="login-card">
+      
+      <div class="input-group">
+        <label for="nome">Nome Completo</label>
+        <input 
+          type="text" 
+          id="nome" 
+          placeholder="Seu nome"
+          [(ngModel)]="nome"
+        >
+      </div>
+  
+      <div class="input-group">
+        <label for="telefone">Telefone</label>
+        <input 
+          type="tel" 
+          id="telefone" 
+          placeholder="(00) 00000-0000"
+          [(ngModel)]="telefone"
+        >
+      </div>
+  
+      <div class="input-group">
+        <label for="email">E-mail</label>
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="nome@exemplo.com"
+          [(ngModel)]="email"
+        >
+      </div>
+  
+      <div class="input-group">
+        <label for="senha">Senha</label>
+        <input 
+          type="password" 
+          id="senha" 
+          placeholder="Crie uma senha forte"
+          [(ngModel)]="senha"
+        >
+      </div>
+  
+      <div class="input-group">
+        <label for="confirmaSenha">Confirmar Senha</label>
+        <input 
+          type="password" 
+          id="confirmaSenha" 
+          placeholder="Repita a senha"
+          [(ngModel)]="confirmarSenha"
+        >
+      </div>
+  
+      <button class="btn-entrar" (click)="fazerCadastro()">
+        Finalizar Cadastro
+      </button>
+  
+      <div class="card-footer">
+        <p>Já tem uma conta? <a routerLink="/">Entrar</a></p>
+      </div>
+  
+    </section>
+  
+  </main>
