@@ -1,162 +1,136 @@
-.home-container {
-    width: 100%;
-    font-family: 'Segoe UI', Roboto, sans-serif;
-  }
-  
-  
-  .hero-section {
-    position: relative;
-    height: 90vh; 
-   
-    background-image: url('https://www.senaipr.org.br/noticias-da-industria/dbimages/adobestock-322198881_263574_img.jpeg');
-    
-    background-size: cover; 
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding-left: 10%;
-    color: white;
-  }
-  
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(16,36,88,0.95) 0%, rgba(16,36,88,0.7) 50%, rgba(16,36,88,0.1) 100%);
-    z-index: 1;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 600px;
-  }
-  
-  .hero-content h1 {
-    font-size: 4rem;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    opacity: 0.9;
-  }
-  
 
-  .cta-buttons {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .btn-orange {
-    background-color: #ff6600;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .btn-orange:hover {
-    background-color: #e65c00;
-    transform: scale(1.05);
-  }
-  
-  .btn-transparent {
-    background: transparent;
-    color: white;
-    padding: 15px 30px;
-    border: 2px solid white;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  .btn-transparent:hover {
-    background: rgba(255,255,255,0.1);
-  }
-  
- 
-  .whatsapp-float {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background-color: #25d366;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    z-index: 100;
-    cursor: pointer;
-  }
-  .whatsapp-float img {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .main-footer {
-    background-color: #111827;
-    color: #9ca3af;
-    padding: 60px 10% 20px;
-  }
-  
-  .footer-content {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-    gap: 40px;
-    border-bottom: 1px solid #374151;
-    padding-bottom: 40px;
-  }
-  
-  .footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    margin-bottom: 20px;
-  }
-  
-  .footer-logo .icon-gear {
-    font-size: 2.5rem;
-    color: #ff6600;
-  }
-  
-  .footer-column h4 {
-    color: white;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column ul li {
-    margin-bottom: 12px;
-    cursor: pointer;
-    transition: color 0.2s;
-  }
-  
-  .footer-column ul li:hover {
-    color: #ff6600;
-  }
-  
-  .copyright {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 0.9rem;
-  }
+.main-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 50px; background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: relative; z-index: 10;
+}
+.logo-area { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+.gear-icon { font-size: 24px; color: #f97316;}
+.logo-area h2 { color: #13151f; font-weight: 800; font-size: 1.5rem; margin-right: 10px; }
+.logo-area p { color: #666; font-size: 0.9rem; width: 100%; margin-left: 30px; margin-top: -5px;}
+
+.navbar { display: flex; align-items: center; gap: 25px; }
+.navbar a { text-decoration: none; color: #555; font-weight: 600; font-size: 0.95rem; transition: 0.3s; }
+.navbar a:hover { color: #f97316; }
+.btn-orcamento {
+  background: #f97316; color: white; border: none; padding: 12px 25px;
+  border-radius: 5px; font-weight: 700; cursor: pointer; transition: 0.3s;
+}
+.btn-orcamento:hover { background: #e6650d; }
+
+
+.hero-section {
+  position: relative; width: 100%; height: 85vh;
+  overflow: hidden; display: flex; align-items: center;
+}
+.slide-bg img {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+}
+.overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(90deg, rgba(19,21,31,0.95) 0%, rgba(19,21,31,0.7) 50%, rgba(19,21,31,0.1) 100%);
+}
+.hero-content {
+  position: relative; z-index: 2; color: white; max-width: 600px; text-align: left;
+  margin-left: 8%; 
+}
+.hero-content h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+.hero-content p { font-size: 1.1rem; margin-bottom: 35px; opacity: 0.9; }
+
+.hero-btns { display: flex; gap: 15px; }
+.btn-primary {
+  background: #f97316; color: white; padding: 12px 30px; font-size: 1rem; font-weight: bold;
+  border: none; border-radius: 5px; cursor: pointer; transition: 0.3s;
+}
+.btn-primary:hover { background: #e6650d; }
+
+
+.nav-arrow {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  color: rgba(255,255,255,0.5);
+  font-size: 1.2rem; cursor: pointer; z-index: 5;
+  display: flex; align-items: center; gap: 10px; transition: 0.3s; font-weight: 600;
+}
+.nav-arrow:hover { color: #f97316; }
+.left { left: 30px; }
+.right { right: 30px; }
+.nav-arrow span { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;}
+
+.indicadores {
+  position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 5; display: flex; gap: 10px;
+}
+.indicadores span {
+  width: 12px; height: 12px; background: rgba(255,255,255,0.4);
+  border-radius: 50%; cursor: pointer; transition: 0.3s;
+}
+.indicadores span.ativo { background: #f97316; width: 25px; border-radius: 10px; }
+
+
+.main-footer { background: #13151f; color: #aab0c4; padding: 70px 50px 20px; font-size: 0.9rem; }
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px;
+  border-bottom: 1px solid #2a2d3e; padding-bottom: 50px;
+}
+
+.col-brand h3 { color: white; font-size: 1.5rem; font-weight: 800; margin-bottom: 20px;}
+.col-brand p { margin-bottom: 25px; line-height: 1.6; max-width: 300px; }
+
+
+.social-icons { display: flex; gap: 15px; margin-top: 20px;}
+
+.social-icons a {
+  display: flex; align-items: center; justify-content: center;
+  transition: 0.3s;
+  color: white; 
+}
+
+
+.social-icons svg {
+  width: 20px; 
+  height: 20px; 
+  transition: 0.3s;
+}
+
+.social-icons a:hover { 
+  transform: translateY(-3px); 
+  color: #f97316; 
+}
+
+
+.main-footer h4 { color: white; margin-bottom: 25px; font-size: 1.1rem; }
+.main-footer ul { list-style: none; }
+.main-footer li { margin-bottom: 15px; transition: 0.3s; cursor: pointer; display: flex; gap: 10px; align-items: center;}
+.col-links li:hover, .col-servicos li:hover { color: #f97316; }
+
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    color: #f97316; 
+    vertical-align: middle;
+    fill: currentColor;
+}
+
+
+.footer-bottom {
+  display: flex; justify-content: center; padding-top: 25px; font-size: 0.85rem;
+}
+
+
+.whatsapp-btn {
+  position: fixed; bottom: 30px; right: 30px;
+  width: 60px; height: 60px; z-index: 100;
+  cursor: pointer; transition: transform 0.3s;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn svg {
+  width: 35px; height: 35px;
+}
+.whatsapp-btn:hover { transform: scale(1.1); }
