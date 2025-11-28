@@ -11,13 +11,15 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent implements OnInit {
 
   
+  mostrarBanner: boolean = false;
+
+  
   imagens: string[] = [
     'imagem/1.jpeg',
     'imagem/2.jpeg',
     'imagem/3.jpeg'
   ];
 
-  
   titulos: string[] = [
     'Manutenção Preventiva',
     'Manutenção Corretiva',
@@ -35,9 +37,24 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
     setInterval(() => {
       this.proximaImagem();
     }, 5000);
+
+    
+    const aceitou = localStorage.getItem('lgpd-aceito');
+    
+    
+    if (!aceitou) {
+      this.mostrarBanner = true;
+    }
+  }
+
+  
+  aceitarCookies() {
+    this.mostrarBanner = false; 
+    localStorage.setItem('lgpd-aceito', 'true'); 
   }
 
   proximaImagem() {
