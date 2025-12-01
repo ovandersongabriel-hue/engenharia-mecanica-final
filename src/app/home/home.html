@@ -16,6 +16,7 @@
 
 
 <section class="hero-section">
+  
   <div class="slide-bg">
     <img [src]="imagens[indexAtual]" alt="Engenharia Mecânica">
     <div class="overlay"></div>
@@ -42,6 +43,7 @@
           (click)="indexAtual = i">
     </span>
   </div>
+
 </section>
 
 
@@ -126,6 +128,7 @@
 
 <footer class="main-footer">
   <div class="footer-grid">
+    
     <div class="col-brand">
       <div class="footer-logo">
         <h3 style="display: flex; align-items: center; gap: 5px;">
@@ -135,24 +138,83 @@
       <p>Excelência em engenharia mecânica e manutenção industrial. Soluções técnicas que garantem eficiência.</p>
       
       <div class="social-icons">
-        <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L7.19795 13.4901H9.19795V21.5Z" /></svg></a>
-        <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12Z"/><path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"/></svg></a>
-        <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 21.5H3.5V9H6.5V21.5ZM5 7.5C4.17157 7.5 3.5 6.82843 3.5 6C3.5 5.17157 4.17157 4.5 5 4.5C5.82843 4.5 6.5 5.17157 6.5 6C6.5 6.82843 5.82843 7.5 5 7.5ZM20.5 21.5H17.5V13.5C17.5 12.3954 16.6046 11.5 15.5 11.5C14.3954 11.5 13.5 12.3954 13.5 13.5V21.5H10.5V9H13.5V10.5C14.2255 9.28313 15.8209 9 17 9C18.933 9 20.5 10.567 20.5 12.5V21.5Z"/></svg></a>
+        <a href="#">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L7.19795 13.4901H9.19795V21.5Z" />
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12Z"/>
+                <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"/>
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 21.5H3.5V9H6.5V21.5ZM5 7.5C4.17157 7.5 3.5 6.82843 3.5 6C3.5 5.17157 4.17157 4.5 5 4.5C5.82843 4.5 6.5 5.17157 6.5 6C6.5 6.82843 5.82843 7.5 5 7.5ZM20.5 21.5H17.5V13.5C17.5 12.3954 16.6046 11.5 15.5 11.5C14.3954 11.5 13.5 12.3954 13.5 13.5V21.5H10.5V9H13.5V10.5C14.2255 9.28313 15.8209 9 17 9C18.933 9 20.5 10.567 20.5 12.5V21.5Z"/>
+            </svg>
+        </a>
       </div>
     </div>
 
     <div class="col-links">
       <h4>Links Rápidos</h4>
-      <ul><li>Home</li><li>Serviços</li><li>Sobre Nós</li><li>Contato</li></ul>
+      <ul>
+        <li>Home</li>
+        <li>Serviços</li>
+        <li>Sobre Nós</li>
+        <li>Contato</li>
+      </ul>
     </div>
 
     <div class="col-servicos">
       <h4>Serviços</h4>
-      <ul><li>Manutenção Preditiva</li><li>Manutenção Preventiva</li><li>Manutenção Corretiva</li><li>Adequação NR-12</li></ul>
+      <ul>
+        <li>Manutenção Preditiva</li>
+        <li>Manutenção Preventiva</li>
+        <li>Manutenção Corretiva</li>
+        <li>Adequação NR-12</li>
+      </ul>
     </div>
 
     <div class="col-contato">
       <h4>Contato</h4>
       <ul>
-        <li><svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 1.25 0 2.45.2 3.57.57.35.11.74.03 1.02-.24l2.2 2.2z"/></svg>(11) 98765-4321</li>
-        <li><svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-
+        <li>
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 1.25 0 2.45.2 3.57.57.35.11.74.03 1.02-.24l2.2 2.2z"/></svg>
+            (11) 98765-4321
+        </li>
+        <li>
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            contato@mechanicpro.com.br
+        </li>
+        <li>
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Av. Industrial, 1234 - SP
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2024 MechanicPro. Todos os direitos reservados.</p>
+  </div>
+  
+  <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
+    <svg width="35" height="35" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.997.614 2.081.936 3.5.936h.001c3.181 0 5.768-2.586 5.768-5.766.001-3.181-2.587-5.767-5.768-5.767zm0 10.662h-.001c-1.205 0-2.217-.376-2.929-.869l-.291-.202-1.996.523.535-1.937-.263-.383c-.563-.82-1.025-1.879-1.026-2.905.001-2.616 2.129-4.743 4.745-4.743 2.615 0 4.743 2.127 4.743 4.743s-2.129 4.743-4.743 4.743zm2.599-3.558c-.142-.071-.843-.416-.973-.463-.13-.048-.225-.071-.32.071-.096.142-.367.463-.45.559-.082.095-.164.107-.306.036-.142-.071-.6-.221-1.144-.706-.425-.379-.712-.847-.796-.989-.083-.142-.009-.219.063-.289.063-.063.142-.166.213-.248.071-.083.096-.142.143-.237.047-.095.024-.178-.012-.249-.035-.071-.32-1.164-.438-1.594-.115-.418-.231-.361-.32-.368-.083-.006-.178-.007-.273-.007-.095 0-.249.036-.379.178-.13.143-.497.486-.497 1.185s.509 1.374.58 1.469c.071.095 2.003 3.059 4.852 4.288 1.932.834 2.327.668 2.788.625.68-.063 1.458-.596 1.663-1.171.205-.576.205-1.07.143-1.171-.061-.102-.225-.163-.367-.234z"/>
+    </svg>
+  </a>
+
+</footer>
+
+<div class="lgpd-banner" *ngIf="mostrarBanner">
+  <div class="lgpd-content">
+    <p>
+      🍪 <strong>Política de Cookies:</strong> Utilizamos cookies para melhorar sua experiência. 
+      Ao continuar navegando, você concorda com nossa política de privacidade de acordo com a <strong>LGPD</strong>.
+    </p>
+    <button (click)="aceitarCookies()">Concordar e Fechar</button>
+  </div>
+</div>
