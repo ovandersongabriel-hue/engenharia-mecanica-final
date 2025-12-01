@@ -10,10 +10,8 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
 
-  
   mostrarBanner: boolean = false;
 
-  
   imagens: string[] = [
     'imagem/1.jpeg',
     'imagem/2.jpeg',
@@ -42,16 +40,19 @@ export class HomeComponent implements OnInit {
       this.proximaImagem();
     }, 5000);
 
-    
+   
     const aceitou = localStorage.getItem('lgpd-aceito');
-    
-    
     if (!aceitou) {
       this.mostrarBanner = true;
     }
   }
 
   
+  enviarFormulario(event: Event) {
+    event.preventDefault(); 
+    alert('Obrigado! Sua mensagem foi enviada. Entraremos em contato em breve.');
+  }
+
   aceitarCookies() {
     this.mostrarBanner = false; 
     localStorage.setItem('lgpd-aceito', 'true'); 
