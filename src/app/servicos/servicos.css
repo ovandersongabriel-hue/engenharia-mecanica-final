@@ -1,0 +1,26 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+
+
+.main-header { display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.logo-area { display: flex; align-items: center; gap: 5px; font-weight: bold; color: #13151f; font-size: 1.2rem; }
+.gear-icon { color: #f97316; font-size: 24px; }
+.navbar { display: flex; gap: 20px; }
+.navbar a { text-decoration: none; color: #555; font-weight: 600; transition: 0.3s; }
+.navbar a:hover, .navbar a.ativo { color: #f97316; }
+
+
+.section-padrao { padding: 80px 20px; text-align: center; background-color: #f9f9f9; min-height: 85vh; }
+.container { max-width: 1100px; margin: 0 auto; }
+.titulo-secao { font-size: 2.5rem; color: #13151f; margin-bottom: 10px; }
+.destaque { color: #f97316; }
+.subtitulo { color: #666; margin-bottom: 50px; }
+
+.grid-servicos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.card { background: white; padding: 40px 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #eee; }
+.card:hover { transform: translateY(-5px); border-bottom: 4px solid #f97316; }
+.icon-circle { width: 70px; height: 70px; background: #eef2ff; color: #1a4f9c; font-size: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; }
+.card h3 { color: #1a4f9c; margin-bottom: 15px; }
+.card p { color: #555; line-height: 1.6; }
+
+
+.main-footer { background: #13151f; color: #aab0c4; padding: 20px; text-align: center; }
