@@ -1,47 +1,25 @@
-<header class="main-header">
-    <div class="logo-area">
-      <span class="gear-icon">⚙️</span>
-      <h2>MechanicPro</h2>
+<section class="services-section">
+  <div class="container">
+    
+    <div class="header-text">
+      <h2>Nossos Serviços</h2>
+      <p>Oferecemos soluções completas em engenharia e manutenção para garantir a eficiência e segurança da sua indústria.</p>
     </div>
-    <nav class="navbar">
-      <a routerLink="/">Home</a>
-      <a routerLink="/servicos" class="ativo">Serviços</a>
-      <a href="#">Sobre</a>
-      <a href="#">Contato</a>
-    </nav>
-  </header>
-  
-  <section class="section-padrao">
-    <div class="container">
-      <h2 class="titulo-secao">Nossos <span class="destaque">Serviços</span></h2>
-      <p class="subtitulo">Soluções completas para a indústria.</p>
+
+    <div class="services-grid">
       
-      <div class="grid-servicos">
+      <div class="service-card" *ngFor="let service of services">
         
-        <div class="card">
-          <div class="icon-circle">🔧</div>
-          <h3>Manutenção Preventiva</h3>
-          <p>Evite paradas inesperadas com planos de revisão periódica e análise de desgaste.</p>
+        <div class="icon-box">
+          <span class="icon">{{ service.icon }}</span>
         </div>
-  
-        <div class="card">
-          <div class="icon-circle">⚙️</div>
-          <h3>Manutenção Corretiva</h3>
-          <p>Reparo rápido e eficiente de máquinas e equipamentos para retomar a produção.</p>
-        </div>
-  
-        <div class="card">
-          <div class="icon-circle">📊</div>
-          <h3>Manutenção Preditiva</h3>
-          <p>Monitoramento de dados e sensores para prever falhas antes que aconteçam.</p>
-        </div>
-  
+        
+        <h3>{{ service.title }}</h3>
+        
+        <p>{{ service.description }}</p>
+        
       </div>
+
     </div>
-  </section>
-  
-  <footer class="main-footer">
-    <div class="footer-bottom">
-      <p>&copy; 2024 MechanicPro. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+  </div>
+</section>
