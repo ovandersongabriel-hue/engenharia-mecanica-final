@@ -1,66 +1,7 @@
-<section class="hero-section">
-  <div class="hero-overlay">
-    <div class="container hero-content">
-      <h1>Soluções Avançadas em <br>Engenharia Mecânica</h1>
-      <p>Garantimos a eficiência e segurança da sua indústria com manutenção especializada e tecnologia de ponta.</p>
-      
-      <div class="hero-buttons">
-        <a routerLink="/contato" class="btn btn-primary">Solicitar Orçamento</a>
-        <a routerLink="/servicos" class="btn btn-outline">Conhecer Serviços</a>
-      </div>
-    </div>
-  </div>
-</section>
+<app-navbar></app-navbar>
 
-<section class="stats-section">
-  <div class="container stats-grid">
-    
-    <div class="stat-item">
-      <span class="stat-number">+10</span>
-      <p>Anos de Experiência</p>
-    </div>
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>
 
-    <div class="stat-item">
-      <span class="stat-number">+500</span>
-      <p>Projetos Executados</p>
-    </div>
-
-    <div class="stat-item">
-      <span class="stat-number">100%</span>
-      <p>Conformidade NR-12</p>
-    </div>
-
-    <div class="stat-item">
-      <span class="stat-number">24h</span>
-      <p>Suporte Técnico</p>
-    </div>
-
-  </div>
-</section>
-
-<app-sobre></app-sobre>
-
-<section class="features-section container">
-  <div class="section-header">
-    <h2>Por que escolher a MechanicPro?</h2>
-    <p>Compromisso com a qualidade técnica e prazos rigorosos.</p>
-  </div>
-
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="icon">⚙️</div>
-      <h3>Alta Tecnologia</h3>
-      <p>Utilizamos equipamentos de última geração para diagnósticos precisos.</p>
-    </div>
-    <div class="feature-card">
-      <div class="icon">🛡️</div>
-      <h3>Segurança Total</h3>
-      <p>Todos os procedimentos seguem rigorosamente as normas de segurança.</p>
-    </div>
-    <div class="feature-card">
-      <div class="icon">🚀</div>
-      <h3>Agilidade</h3>
-      <p>Atendimento rápido para minimizar o tempo de parada da sua produção.</p>
-    </div>
-  </div>
-</section>
+<app-footer></app-footer>

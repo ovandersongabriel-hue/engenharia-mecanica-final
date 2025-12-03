@@ -1,26 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterLink, Router } from '@angular/router'; 
-import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
   standalone: true,
-  imports: [RouterLink, FormsModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './cadastro.html',
-  styleUrl: './cadastro.css'
+  styleUrls: ['./cadastro.css']
 })
 export class CadastroComponent {
-  nome: string = '';
-  telefone: string = '';
-  email: string = '';
-  senha: string = '';
-  confirmarSenha: string = '';
-
-  constructor(private router: Router) {}
-
-  fazerCadastro() {
-    console.log('Cadastro:', this.nome);
-    alert(`Cadastro realizado com sucesso para ${this.nome}!`);
-    this.router.navigate(['/']);
+  
+  onSubmit(event: Event) {
+    event.preventDefault(); 
+    alert('Solicitação enviada! Em breve entraremos em contato.');
   }
 }

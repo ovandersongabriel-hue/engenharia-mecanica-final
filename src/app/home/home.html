@@ -1,64 +1,48 @@
-<section class="hero-section">
-  <div class="hero-overlay">
-    <div class="container hero-content">
-      <h1>Soluções Avançadas em <br>Engenharia Mecânica</h1>
-      <p>Garantimos a eficiência e segurança da sua indústria com manutenção especializada e tecnologia de ponta.</p>
+<section class="intro-section container">
+  <div class="intro-grid fade-in" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide" [style.display]="i === currentSlide ? 'grid' : 'none'">
+    
+    <div class="intro-image-wrapper">
+      <img [src]="slide.image" [alt]="slide.title" class="intro-img">
       
-      <div class="hero-buttons">
-        <a routerLink="/contato" class="btn btn-primary">Solicitar Orçamento</a>
-        <a routerLink="/servicos" class="btn btn-outline">Conhecer Serviços</a>
+      <div class="experience-badge">
+        <span class="badge-number">{{ slide.badge }}</span>
+        <span class="badge-text">{{ slide.badgeText }}</span>
       </div>
     </div>
+
+    <div class="intro-content">
+      <span class="section-label">{{ slide.label }}</span>
+      <h1>{{ slide.title }}</h1>
+      <p>{{ slide.description }}</p>
+
+      <a [routerLink]="slide.link" class="btn btn-primary">{{ slide.buttonText }}</a>
+    </div>
+  </div>
+
+  <div class="carousel-dots">
+    <span *ngFor="let slide of slides; let i = index" 
+          (click)="setSlide(i)" 
+          [class.active-dot]="i === currentSlide"
+          class="dot"></span>
   </div>
 </section>
 
-<section class="stats-section">
-  <div class="container stats-grid">
-    
-    <div class="stat-item">
-      <span class="stat-number">+10</span>
-      <p>Anos de Experiência</p>
+<section class="values-section">
+  <div class="container values-grid">
+    <div class="value-card">
+      <div class="icon-circle icon-red">🎯</div>
+      <h3>Missão</h3>
+      <p>Prover soluções de engenharia que aumentem a confiabilidade e segurança dos ativos industriais.</p>
     </div>
-
-    <div class="stat-item">
-      <span class="stat-number">+500</span>
-      <p>Projetos Executados</p>
+    <div class="value-card active-card">
+      <div class="icon-circle icon-dark">👁️</div>
+      <h3>Visão</h3>
+      <p>Ser a parceira número 1 da indústria nacional em gestão de ativos e manutenção 4.0.</p>
     </div>
-
-    <div class="stat-item">
-      <span class="stat-number">100%</span>
-      <p>Conformidade NR-12</p>
-    </div>
-
-    <div class="stat-item">
-      <span class="stat-number">24h</span>
-      <p>Suporte Técnico</p>
-    </div>
-
-  </div>
-</section>
-
-<section class="features-section container">
-  <div class="section-header">
-    <h2>Por que escolher a MechanicPro?</h2>
-    <p>Compromisso com a qualidade técnica e prazos rigorosos.</p>
-  </div>
-
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="icon">⚙️</div>
-      <h3>Alta Tecnologia</h3>
-      <p>Utilizamos equipamentos de última geração para diagnósticos precisos.</p>
-    </div>
-    <div class="feature-card">
-      <div class="icon">🛡️</div>
-      <h3>Segurança Total</h3>
-      <p>Todos os procedimentos seguem rigorosamente as normas de segurança.</p>
-    </div>
-    <div class="feature-card">
-      <div class="icon">🚀</div>
-      <h3>Agilidade</h3>
-      <p>Atendimento rápido para minimizar o tempo de parada da sua produção.</p>
+    <div class="value-card">
+      <div class="icon-circle icon-blue">💎</div>
+      <h3>Valores</h3>
+      <p>Transparência técnica, segurança em primeiro lugar e inovação constante.</p>
     </div>
   </div>
 </section>
