@@ -1,20 +1,22 @@
 .auth-section {
-  background-color: #f8fafc; 
-  min-height: 80vh; 
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f7f6;
+  padding: 20px;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 450px;
 }
 
 .auth-card {
   background: white;
-  width: 100%;
-  max-width: 450px; 
   padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .auth-header {
@@ -23,87 +25,82 @@
 }
 
 .auth-header h2 {
-  color: #0f172a;
-  font-size: 1.8rem;
+  color: #333;
   margin-bottom: 10px;
 }
 
-.auth-header p {
-  color: #64748b;
-  font-size: 0.95rem;
-}
-
-
 .form-group {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group label {
-  display: block;
   margin-bottom: 8px;
-  color: #334155;
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
 }
 
 .form-group input {
-  width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #cbd5e1;
-  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
   font-size: 1rem;
-  transition: border-color 0.3s;
-  box-sizing: border-box; 
 }
 
-.form-group input:focus {
-  outline: none;
-  border-color: #f97316; 
-  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+.form-group-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 25px 0;
+  text-align: left;
 }
 
+.form-group-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #007bff;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.form-group-checkbox label {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-group-checkbox label strong {
+  color: #007bff;
+}
 
 .btn-full {
   width: 100%;
-  background-color: #f97316;
-  color: white;
   padding: 14px;
+  background-color: #007bff;
+  color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
-  margin-top: 10px;
 }
 
 .btn-full:hover {
-  background-color: #ea580c;
+  background-color: #0056b3;
 }
 
 .auth-footer {
   text-align: center;
   margin-top: 25px;
-  font-size: 0.9rem;
-  color: #64748b;
 }
 
 .auth-footer a {
-  color: #f97316;
-  font-weight: 600;
+  color: #007bff;
   text-decoration: none;
-}
-
-.auth-footer a:hover {
-  text-decoration: underline;
-}
-
-
-.fade-in {
-  animation: slideUp 0.5s ease-out;
-}
-
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  font-weight: 600;
 }
